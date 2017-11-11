@@ -1,0 +1,70 @@
+
+
+
+body {
+
+	 font-family: 'Kaushan Script', cursive;
+	 background: url(../img/backimg.png) no-repeat center fixed;
+	 background-size: cover;
+
+
+}
+
+#bigdiv {
+	margin-top: 50px;
+}
+
+
+
+
+#bigdiv div {
+	text-align: center;
+
+	height: 200px;
+	width: 600px;
+	margin: 0 auto;
+
+}
+
+form {
+	padding-top: 20px;
+	display: block;
+	width: 180px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+h1 {
+	color: white;
+	padding-top: 10px;
+	box-shadow:  0 8px 16px 0 rgb(146, 119, 4), 0 6px 20px 0 rgb(154, 150, 12);
+}
+
+button {
+	margin-top: 20px;
+  box-shadow:  0 8px 16px 0 rgb(146, 119, 4), 0 6px 20px 0 rgb(154, 150, 12);
+
+ }
+
+
+input {
+	box-shadow:  0 8px 16px 0 rgb(146, 119, 4), 0 6px 20px 0 rgb(154, 150, 12);
+}
+
+#sign {
+	color: white;
+}
+
+
+
+#bottom {
+	text-align: center;
+}
+
+#secretwish ,
+ #keywords {
+	color: white;
+	font-size: 25px;
+
+}

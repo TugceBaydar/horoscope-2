@@ -75,23 +75,22 @@ var objHoroscope = [
    }
 
 ]
+
+
   function displayInfo() {
 
-     var horname = document.getElementById('horname')
+    var x = document.getElementById("Ultra")
+    var i = x.selectedIndex
 
-    console.log(horname)
-    console.log("users value is " + horname.value)
+      var isSuccess = false
 
-    var isSuccess = false
+    for(var i=0; i<objHoroscope.length; i++) {
 
-      for(var i=0; i<objHoroscope.length; i++) {
-
-          console.log("users value lowercase is: " + horname.value.toLowerCase())
-          console.log("horoscope name is: " + objHoroscope[i].name)
+        console.log( x.options[i].text )
+        console.log("horoscope name is: " + objHoroscope[i].name)
 
 
-          if (horname.value.toLowerCase() == objHoroscope[i].name.toLowerCase()) {
-
+          if ( x.options[document.getElementById('Ultra').selectedIndex].text == objHoroscope[i].name ) {
 
                     isSuccess = true
                     break
@@ -99,9 +98,6 @@ var objHoroscope = [
 
               isSuccess = false
               // no matches found confirm it
-
-
-
             }
 
           }
@@ -112,7 +108,7 @@ var objHoroscope = [
 
 
 
-            document.getElementById('sign').textContent = horname.value
+            document.getElementById('sign').textContent = x.options[i].text
             document.getElementById('picture').src = objHoroscope[i].image
             picture.width = '300'
             picture.height = '150'
